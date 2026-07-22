@@ -21,6 +21,7 @@ This repository contains independently prepared capability samples. Each sample 
 | [Chatwoot + AI Support Technical Audit and MVP](samples/chatwoot-ai-support-audit-sample.md) | Technical discovery, RAG and human handoff boundaries, MVP architecture, first-week schedule, security controls, risks, and acceptance criteria | Sources checked 2026-07-16; public project post dated 2026-06-20 |
 | [SensorDeck English B2B SaaS Website Capability Brief](samples/sensordeck-english-saas-site-capability-brief.md) | Six-page information architecture, English messaging direction, responsive and contact-form boundaries, delivery schedule, acceptance criteria, and two scoped price options | Sources checked 2026-07-16; public project post dated 2026-07-02 |
 | [Automation Rescue fictional workflow sample](https://chris-saas-services.stomeonst123.chatgpt.site/resources/automation-rescue-sample) | Field-map isolation, normalized-email lookup, update-or-create logic, one repeat-submission acceptance test, and explicit truth boundaries | Fictional scenario documented 2026-07-16 |
+| [Public Repository Signal Notebook](https://github.com/stomeonst/public-repository-signal-notebook) | Python, SQLite, data validation, deterministic scoring, sensitivity analysis, accessible SVG charts, tests, and evidence-aware technical writing across 500 public repository records | Fixed public snapshot dated 2026-07-20; sample published 2026-07-22 |
 
 ## How to review these materials
 
