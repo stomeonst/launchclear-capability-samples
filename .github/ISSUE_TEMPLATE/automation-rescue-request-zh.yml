@@ -1,0 +1,96 @@
+name: 自动化修复需求
+description: 提交一个已获授权工作流的固定范围付费诊断需求
+title: "[自动化修复] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        此表单创建公开Issue，请只提交经过脱敏的初步需求。
+
+        请勿填写账号密码、API密钥、个人信息、客户数据、私有链接、生产环境导出文件或保密日志。无法公开描述的需求，请通过LaunchClear服务页面中的私密联系入口沟通。
+
+        创建Issue仅表示申请范围评估。双方以书面方式确认范围、付款、访问边界和验收标准后，服务才会开始。
+
+  - type: dropdown
+    id: starting_point
+    attributes:
+      label: 起始服务
+      description: 请选择最接近的固定范围服务。
+      options:
+        - 人民币799元自动化修复
+        - 120美元自动化修复
+        - 需要单独报价
+        - 需要先确认范围
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 主要平台
+      options:
+        - Make
+        - Zapier
+        - n8n
+        - Airtable
+        - 网页表单或Webhook
+        - 其他
+    validations:
+      required: true
+
+  - type: input
+    id: workflow_goal
+    attributes:
+      label: 工作流目标
+      description: 用一句话描述希望实现的业务结果。
+      placeholder: 合格表单提交后，在Airtable中创建或更新一条记录。
+    validations:
+      required: true
+
+  - type: textarea
+    id: observed_behavior
+    attributes:
+      label: 当前问题
+      description: 描述现在发生的情况，只使用脱敏示例。
+      placeholder: 工作流收到表单，但邮箱字段为空，重复提交还会创建重复记录。
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: 预期结果
+      description: 说明什么结果可以通过验收。
+      placeholder: 正确映射邮箱字段，相同标准化邮箱再次提交时更新已有记录。
+    validations:
+      required: true
+
+  - type: textarea
+    id: sanitized_evidence
+    attributes:
+      label: 脱敏证据
+      description: 可以填写公开文档链接、脱敏报错、虚构字段名或安全截图说明。请勿填写密钥或私有数据。
+      placeholder: 公开文档链接、脱敏错误文字和虚构字段名。
+
+  - type: dropdown
+    id: timing
+    attributes:
+      label: 期望时间
+      options:
+        - 两个工作日内
+        - 一周内
+        - 时间灵活
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: 提交确认
+      options:
+        - label: 我有权申请处理此工作流。
+          required: true
+        - label: 此公开Issue不含账号密码、密钥、个人信息、客户数据或保密材料。
+          required: true
+        - label: 我理解双方需要另行确认范围、付款、访问边界和验收标准，服务才会开始。
+          required: true

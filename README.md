@@ -36,7 +36,15 @@ The samples may be discussed as examples of current analysis and delivery prepar
 
 The international and mainland China prices depend on a mutually usable billing and payment path. No revenue, conversion, market-access, regulatory, or production outcome is guaranteed.
 
-[Review the service details](https://chris-saas-services.stomeonst123.chatgpt.site) or [request a fixed-scope starting point by email](mailto:stomeonst123@gmail.com?subject=LaunchClear%20fixed-scope%20service%20request&body=Hi%20Chris%2C%0A%0AI%27m%20interested%20in%3A%0AProduct%20or%20workflow%20URL%3A%0AProblem%20to%20solve%3A%0ADesired%20outcome%3A%0ATimeline%3A%0A%0AThanks%2C).
+### Start a request
+
+1. [Submit a public, sanitized Automation Rescue request in English](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=automation-rescue-request.yml).
+2. [用中文提交公开且已脱敏的自动化修复需求](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=automation-rescue-request-zh.yml)。
+3. [Use the private email path](mailto:stomeonst123@gmail.com?subject=LaunchClear%20fixed-scope%20service%20request&body=Hi%20Chris%2C%0A%0AI%27m%20interested%20in%3A%0AProduct%20or%20workflow%20URL%3A%0AProblem%20to%20solve%3A%0ADesired%20outcome%3A%0ATimeline%3A%0A%0AThanks%2C) when a safe first description cannot be posted publicly.
+
+Do not place credentials, API keys, personal data, customer data, private URLs, production exports, or confidential logs in a GitHub issue. Creating a request does not create a contract or start work. Scope, payment, access boundaries, and acceptance criteria must be confirmed separately in writing.
+
+[Review the service details and public sample](https://chris-saas-services.stomeonst123.chatgpt.site).
 
 ## Contact
 
@@ -48,4 +56,4 @@ Service page: [LaunchClear services and public work](https://chris-saas-services
 
 Email: [stomeonst123@gmail.com](mailto:stomeonst123@gmail.com?subject=LaunchClear%20service%20request)
 
-Prepared for public review on 2026-07-16. Service entry points checked on 2026-07-22.
+Prepared for public review on 2026-07-16. Service entry points checked on 2026-07-23.

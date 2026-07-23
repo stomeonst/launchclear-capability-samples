@@ -1,0 +1,96 @@
+name: Automation Rescue request
+description: Request a paid, fixed-scope review of one authorized workflow
+title: "[Automation Rescue] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this public form for a sanitized first request.
+
+        Do not post credentials, API keys, personal data, customer data, private URLs, production exports, or confidential logs. Use the private contact path on the LaunchClear service page when the request cannot be described safely in public.
+
+        Opening an issue starts a scope review. Work begins only after both parties confirm scope, payment, access boundaries, and acceptance criteria in writing.
+
+  - type: dropdown
+    id: starting_point
+    attributes:
+      label: Requested starting point
+      description: Choose the closest fixed-scope option.
+      options:
+        - USD 120 Automation Rescue
+        - RMB 799 Automation Rescue
+        - I need a separate quote
+        - I need scope clarification first
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Primary platform
+      options:
+        - Make
+        - Zapier
+        - n8n
+        - Airtable
+        - Web form or webhook
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: workflow_goal
+    attributes:
+      label: Workflow goal
+      description: Describe the business outcome in one sentence.
+      placeholder: When a qualified form is submitted, create or update one Airtable record.
+    validations:
+      required: true
+
+  - type: textarea
+    id: observed_behavior
+    attributes:
+      label: Observed behavior
+      description: Explain what currently happens. Use sanitized examples only.
+      placeholder: The workflow receives the form, but the email field is empty and repeat submissions create duplicates.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected behavior
+      description: State the result that would count as a successful repair.
+      placeholder: Map the email field correctly and update the existing record when the normalized email already exists.
+    validations:
+      required: true
+
+  - type: textarea
+    id: sanitized_evidence
+    attributes:
+      label: Sanitized evidence
+      description: List safe screenshots, error text, sample field names, or public documentation links. Do not paste secrets or private data.
+      placeholder: Public documentation URL, redacted error text, and fictional field names.
+
+  - type: dropdown
+    id: timing
+    attributes:
+      label: Preferred timing
+      options:
+        - Within 2 business days
+        - Within 1 week
+        - Flexible
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: I am authorized to request work on this workflow.
+          required: true
+        - label: This public issue contains no credentials, secrets, personal data, customer data, or confidential material.
+          required: true
+        - label: I understand that scope, payment, access, and acceptance criteria must be confirmed separately before work begins.
+          required: true
