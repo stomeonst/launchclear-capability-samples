@@ -23,6 +23,12 @@ This repository contains independently prepared capability samples. Each sample 
 | [Automation Rescue fictional workflow sample](https://chris-saas-services.stomeonst123.chatgpt.site/resources/automation-rescue-sample) | Field-map isolation, normalized-email lookup, update-or-create logic, one repeat-submission acceptance test, and explicit truth boundaries | Fictional scenario documented 2026-07-16 |
 | [Public Repository Signal Notebook](https://github.com/stomeonst/public-repository-signal-notebook) | Python, SQLite, data validation, deterministic scoring, sensitivity analysis, accessible SVG charts, tests, and evidence-aware technical writing across 500 public repository records | Fixed public snapshot dated 2026-07-20; sample published 2026-07-22 |
 
+## Verified public QA follow-through
+
+| Public review | What happened | Truth boundary |
+|---|---|---|
+| [Vendo website trust links](https://github.com/runvendo/vendo/issues/423) | LaunchClear reported that the public site did not expose shareable privacy and terms destinations. On 2026-07-23, a maintainer supplied the canonical [terms](https://vendo.run/terms) and [privacy](https://vendo.run/privacy) pages and closed the issue as completed. | This was public product feedback. LaunchClear did not implement the website change, was not hired by Vendo, and received no payment. |
+
 ## How to review these materials
 
 Read the disclosure at the beginning and end of each sample before evaluating its proposed approach. Claims about a product, organization, audience, integration, security posture, or commercial result stay provisional until supported by owner-approved evidence.
