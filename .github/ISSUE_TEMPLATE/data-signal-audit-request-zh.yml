@@ -1,0 +1,103 @@
+name: 数据洞察审计需求
+description: 提交一份公开数据或已授权脱敏数据的固定范围付费分析需求
+title: "[数据洞察审计] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        此表单会创建公开Issue，请只提交经过脱敏的初步需求。
+
+        请勿填写账号密码、API密钥、个人信息、客户数据、私有链接、生产环境导出文件或保密材料。无法公开描述的需求，请使用LaunchClear服务页面中的私密联系入口。
+
+        创建Issue仅表示申请范围评估。双方以书面方式确认范围、付款、数据来源授权和验收标准后，服务才会开始。
+
+  - type: dropdown
+    id: starting_point
+    attributes:
+      label: 起始服务
+      description: 请选择最接近的固定范围服务。
+      options:
+        - 人民币999元数据洞察审计
+        - 150美元数据洞察审计
+        - 需要单独报价
+        - 需要先确认范围
+    validations:
+      required: true
+
+  - type: dropdown
+    id: source_type
+    attributes:
+      label: 数据来源类型
+      options:
+        - 公开CSV
+        - 公开JSON
+        - 已授权且脱敏的CSV导出
+        - 已授权且脱敏的JSON导出
+        - 其他公开结构化数据
+    validations:
+      required: true
+
+  - type: input
+    id: public_source
+    attributes:
+      label: 公开来源或安全说明
+      description: 填写公开数据链接，或者在不分享私有访问权限的情况下描述已授权脱敏数据。
+      placeholder: https://example.com/public-data.csv
+    validations:
+      required: true
+
+  - type: textarea
+    id: decision_question
+    attributes:
+      label: 决策问题
+      description: 说明本次分析希望帮助回答的业务或研究问题。
+      placeholder: 哪些公开仓库表现出更强的近期维护和文档信号？
+    validations:
+      required: true
+
+  - type: textarea
+    id: known_fields
+    attributes:
+      label: 已知字段和大致规模
+      description: 列出重要字段和大致行数。固定范围最多覆盖5,000行。
+      placeholder: 500行，包含仓库名称、星标数、最后更新时间、问题数量和文档字段。
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: requested_outputs
+    attributes:
+      label: 希望获得的交付物
+      description: 请选择最重要的交付物。
+      options:
+        - label: 数据字典和验证结果
+        - label: 可复现的Python和SQLite分析
+        - label: 最多三条有证据支持的发现
+        - label: 一张无障碍图表
+        - label: 简短决策说明
+    validations:
+      required: true
+
+  - type: dropdown
+    id: timing
+    attributes:
+      label: 期望时间
+      options:
+        - 两个工作日内
+        - 一周内
+        - 时间灵活
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: 提交确认
+      options:
+        - label: 我有权申请分析这份数据。
+          required: true
+        - label: 此公开Issue不含账号密码、密钥、个人信息、客户数据、私有链接或保密材料。
+          required: true
+        - label: 我理解双方需要另行确认范围、付款、数据来源授权和验收标准，服务才会开始。
+          required: true
+

@@ -1,0 +1,103 @@
+name: Public Data Signal Audit request
+description: Request a paid, fixed-scope analysis of one public or authorized sanitized dataset
+title: "[Data Signal Audit] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this public form for a sanitized first request.
+
+        Do not post credentials, API keys, personal data, customer data, private URLs, production exports, or confidential material. Use the private contact path on the LaunchClear service page when the request cannot be described safely in public.
+
+        Opening an issue starts a scope review. Work begins only after both parties confirm scope, payment, source authorization, and acceptance criteria in writing.
+
+  - type: dropdown
+    id: starting_point
+    attributes:
+      label: Requested starting point
+      description: Choose the closest fixed-scope option.
+      options:
+        - USD 150 Public Data Signal Audit
+        - RMB 999 Public Data Signal Audit
+        - I need a separate quote
+        - I need scope clarification first
+    validations:
+      required: true
+
+  - type: dropdown
+    id: source_type
+    attributes:
+      label: Source type
+      options:
+        - Public CSV
+        - Public JSON
+        - Authorized sanitized CSV export
+        - Authorized sanitized JSON export
+        - Other public structured data
+    validations:
+      required: true
+
+  - type: input
+    id: public_source
+    attributes:
+      label: Public source or safe description
+      description: Link to the public source, or describe the authorized sanitized export without sharing private access.
+      placeholder: https://example.com/public-data.csv
+    validations:
+      required: true
+
+  - type: textarea
+    id: decision_question
+    attributes:
+      label: Decision question
+      description: State the business or research question that the analysis should help answer.
+      placeholder: Which public repositories show the strongest recent maintenance and documentation signals?
+    validations:
+      required: true
+
+  - type: textarea
+    id: known_fields
+    attributes:
+      label: Known fields and approximate size
+      description: List the important columns and approximate row count. The fixed scope covers up to 5,000 rows.
+      placeholder: 500 rows with repository name, stars, last update, issue count, and documentation fields.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: requested_outputs
+    attributes:
+      label: Requested outputs
+      description: Select the outputs that matter most.
+      options:
+        - label: Data dictionary and validation results
+        - label: Reproducible Python and SQLite analysis
+        - label: Up to three evidence-backed findings
+        - label: One accessible chart
+        - label: Short decision note
+    validations:
+      required: true
+
+  - type: dropdown
+    id: timing
+    attributes:
+      label: Preferred timing
+      options:
+        - Within 2 business days
+        - Within 1 week
+        - Flexible
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: I am authorized to request analysis of this dataset.
+          required: true
+        - label: This public issue contains no credentials, secrets, personal data, customer data, private links, or confidential material.
+          required: true
+        - label: I understand that scope, payment, source authorization, and acceptance criteria must be confirmed separately before work begins.
+          required: true
+

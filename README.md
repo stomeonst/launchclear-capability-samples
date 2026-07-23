@@ -39,6 +39,7 @@ The samples may be discussed as examples of current analysis and delivery prepar
 
 1. **Automation Rescue: USD 120 or RMB 799.** One existing n8n, Make, or Zapier workflow, one reproducible fault, one bounded repair, one buyer-authorized test, and one change note. The first milestone excludes production credentials, destructive operations, penetration testing, and a new multi-system build.
 2. **Conversion QA Diagnostic: USD 150 or RMB 999.** Review of up to five public SaaS pages, a prioritized findings sheet, an implementation checklist, and one email clarification. The delivery target is 24 hours after complete inputs, confirmed scope, and verified payment.
+3. **Public Data Signal Audit: USD 150 or RMB 999.** Review of one public CSV or JSON dataset, or one buyer-authorized sanitized export of up to 5,000 rows. Delivery includes a data dictionary, validation results, a reproducible Python and SQLite analysis, up to three evidence-backed findings, one accessible chart, and a short decision note within two business days after complete inputs, confirmed scope, and verified payment. It excludes personal or regulated data, private-system access, predictive guarantees, and automated decisions about people.
 
 The international and mainland China prices depend on a mutually usable billing and payment path. No revenue, conversion, market-access, regulatory, or production outcome is guaranteed.
 
@@ -46,7 +47,9 @@ The international and mainland China prices depend on a mutually usable billing 
 
 1. [Submit a public, sanitized Automation Rescue request in English](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=automation-rescue-request.yml).
 2. [用中文提交公开且已脱敏的自动化修复需求](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=automation-rescue-request-zh.yml)。
-3. [Use the private email path](mailto:stomeonst123@gmail.com?subject=LaunchClear%20fixed-scope%20service%20request&body=Hi%20Chris%2C%0A%0AI%27m%20interested%20in%3A%0AProduct%20or%20workflow%20URL%3A%0AProblem%20to%20solve%3A%0ADesired%20outcome%3A%0ATimeline%3A%0A%0AThanks%2C) when a safe first description cannot be posted publicly.
+3. [Submit a public, sanitized Data Signal Audit request in English](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=data-signal-audit-request.yml).
+4. [用中文提交公开且已脱敏的数据洞察审计需求](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=data-signal-audit-request-zh.yml)。
+5. [Use the private email path](mailto:stomeonst123@gmail.com?subject=LaunchClear%20fixed-scope%20service%20request&body=Hi%20Chris%2C%0A%0AI%27m%20interested%20in%3A%0AProduct%2C%20workflow%2C%20or%20public%20dataset%3A%0AProblem%20to%20solve%3A%0ADesired%20outcome%3A%0ATimeline%3A%0A%0AThanks%2C) when a safe first description cannot be posted publicly.
 
 Do not place credentials, API keys, personal data, customer data, private URLs, production exports, or confidential logs in a GitHub issue. Creating a request does not create a contract or start work. Scope, payment, access boundaries, and acceptance criteria must be confirmed separately in writing.
 
