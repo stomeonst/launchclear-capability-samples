@@ -22,6 +22,7 @@ This repository contains independently prepared capability samples. Each sample 
 | [SensorDeck English B2B SaaS Website Capability Brief](samples/sensordeck-english-saas-site-capability-brief.md) | Six-page information architecture, English messaging direction, responsive and contact-form boundaries, delivery schedule, acceptance criteria, and two scoped price options | Sources checked 2026-07-16; public project post dated 2026-07-02 |
 | [Automation Rescue fictional workflow sample](https://chris-saas-services.stomeonst123.chatgpt.site/resources/automation-rescue-sample) | Field-map isolation, normalized-email lookup, update-or-create logic, one repeat-submission acceptance test, and explicit truth boundaries | Fictional scenario documented 2026-07-16 |
 | [Public Repository Signal Notebook](https://github.com/stomeonst/public-repository-signal-notebook) | Python, SQLite, data validation, deterministic scoring, sensitivity analysis, accessible SVG charts, tests, and evidence-aware technical writing across 500 public repository records | Fixed public snapshot dated 2026-07-20; sample published 2026-07-22 |
+| [Localize SaaS for China](https://github.com/stomeonst/localize-saas-for-china) | A published AI agent Skill with bounded market evidence, bilingual positioning, payment-path checks, channel planning, launch QA, and explicit claim limits | Public Skill repository checked 2026-07-24 |
 
 ## Verified public QA follow-through
 
@@ -40,6 +41,7 @@ The samples may be discussed as examples of current analysis and delivery prepar
 1. **Automation Rescue: USD 120 or RMB 799.** One existing n8n, Make, or Zapier workflow, one reproducible fault, one bounded repair, one buyer-authorized test, and one change note. The first milestone excludes production credentials, destructive operations, penetration testing, and a new multi-system build.
 2. **Conversion QA Diagnostic: USD 150 or RMB 999.** Review of up to five public SaaS pages, a prioritized findings sheet, an implementation checklist, and one email clarification. The delivery target is 24 hours after complete inputs, confirmed scope, and verified payment.
 3. **Public Data Signal Audit: USD 150 or RMB 999.** Review of one public CSV or JSON dataset, or one buyer-authorized sanitized export of up to 5,000 rows. Delivery includes a data dictionary, validation results, a reproducible Python and SQLite analysis, up to three evidence-backed findings, one accessible chart, and a short decision note within two business days after complete inputs, confirmed scope, and verified payment. It excludes personal or regulated data, private-system access, predictive guarantees, and automated decisions about people.
+4. **AI Agent Skill QA: USD 150 or RMB 999.** Review of one public Skill repository against up to five representative user tasks. Delivery includes a trigger and task coverage matrix, instruction and boundary review, up to three prioritized reproducible findings, one bounded patch or implementation checklist, and one post-change retest within two business days after complete inputs, confirmed scope, and verified payment. It excludes security testing, prompt-injection red teaming, private-repository access, production credentials, and multi-agent deployment guarantees.
 
 The international and mainland China prices depend on a mutually usable billing and payment path. No revenue, conversion, market-access, regulatory, or production outcome is guaranteed.
 
@@ -49,7 +51,9 @@ The international and mainland China prices depend on a mutually usable billing 
 2. [用中文提交公开且已脱敏的自动化修复需求](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=automation-rescue-request-zh.yml)。
 3. [Submit a public, sanitized Data Signal Audit request in English](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=data-signal-audit-request.yml).
 4. [用中文提交公开且已脱敏的数据洞察审计需求](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=data-signal-audit-request-zh.yml)。
-5. [Use the private email path](mailto:stomeonst123@gmail.com?subject=LaunchClear%20fixed-scope%20service%20request&body=Hi%20Chris%2C%0A%0AI%27m%20interested%20in%3A%0AProduct%2C%20workflow%2C%20or%20public%20dataset%3A%0AProblem%20to%20solve%3A%0ADesired%20outcome%3A%0ATimeline%3A%0A%0AThanks%2C) when a safe first description cannot be posted publicly.
+5. [Submit a public, sanitized AI Agent Skill QA request in English](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=agent-skill-qa-request.yml).
+6. [用中文提交公开且已脱敏的AI Agent Skill质量审计需求](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=agent-skill-qa-request-zh.yml)。
+7. [Use the private email path](mailto:stomeonst123@gmail.com?subject=LaunchClear%20fixed-scope%20service%20request&body=Hi%20Chris%2C%0A%0AI%27m%20interested%20in%3A%0AProduct%2C%20workflow%2C%20Skill%2C%20or%20public%20dataset%3A%0AProblem%20to%20solve%3A%0ADesired%20outcome%3A%0ATimeline%3A%0A%0AThanks%2C) when a safe first description cannot be posted publicly.
 
 Do not place credentials, API keys, personal data, customer data, private URLs, production exports, or confidential logs in a GitHub issue. Creating a request does not create a contract or start work. Scope, payment, access boundaries, and acceptance criteria must be confirmed separately in writing.
 
@@ -65,4 +69,4 @@ Service page: [LaunchClear services and public work](https://chris-saas-services
 
 Email: [stomeonst123@gmail.com](mailto:stomeonst123@gmail.com?subject=LaunchClear%20service%20request)
 
-Prepared for public review on 2026-07-16. Service entry points checked on 2026-07-23.
+Prepared for public review on 2026-07-16. Service entry points checked on 2026-07-24.

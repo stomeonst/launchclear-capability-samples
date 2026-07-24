@@ -1,0 +1,115 @@
+name: AI Agent Skill质量审计需求
+description: 提交一个公开Agent Skill仓库的固定范围付费质量审计需求
+title: "[Agent Skill质量审计] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        此表单会创建公开Issue，请只提交一个公开Agent Skill仓库的脱敏初步需求。
+
+        请勿填写账号密码、API密钥、个人信息、客户数据、私有仓库、私有链接、生产环境导出文件或保密材料。无法公开描述的需求，请使用LaunchClear服务页面中的私密联系入口。
+
+        创建Issue仅表示申请范围评估。双方以书面方式确认范围、付款、仓库授权和验收标准后，服务才会开始。
+
+  - type: dropdown
+    id: starting_point
+    attributes:
+      label: 起始服务
+      description: 请选择最接近的固定范围服务。
+      options:
+        - 人民币999元AI Agent Skill质量审计
+        - 150美元AI Agent Skill质量审计
+        - 需要单独报价
+        - 需要先确认范围
+    validations:
+      required: true
+
+  - type: input
+    id: public_repository
+    attributes:
+      label: 公开Skill仓库
+      description: 填写需要审计的公开仓库或公开Skill目录链接。
+      placeholder: https://github.com/example/example-skill
+    validations:
+      required: true
+
+  - type: dropdown
+    id: target_environment
+    attributes:
+      label: 主要目标环境
+      options:
+        - Codex
+        - Claude Code
+        - OpenClaw
+        - 通用SKILL.md兼容Agent
+        - 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: representative_tasks
+    attributes:
+      label: 代表性用户任务
+      description: 最多填写五个希望Skill稳定处理的简短任务。
+      placeholder: |
+        1. 审计一个SaaS落地页的中国市场上线准备度。
+        2. 输出一份双语术语复核。
+        3. 说明Skill应在什么情况下停止并请求用户输入。
+    validations:
+      required: true
+
+  - type: textarea
+    id: observed_problem
+    attributes:
+      label: 已发现的问题或不确定点
+      description: 描述漏触发、误触发、输出不完整、边界不清或其他可复现问题。
+      placeholder: 直接提出本地化需求时没有选中此Skill，或者输出的上线清单缺少关键步骤。
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: 期望行为
+      description: 说明成功结果应包含什么，以及重要的停止条件。
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: requested_outputs
+    attributes:
+      label: 希望获得的交付物
+      description: 请选择最重要的交付物。
+      options:
+        - label: 触发与任务覆盖矩阵
+        - label: 指令与边界复核
+        - label: 最多三条有优先级的可复现发现
+        - label: 一项固定范围补丁或实施清单
+        - label: 一次修改后复测
+    validations:
+      required: true
+
+  - type: dropdown
+    id: timing
+    attributes:
+      label: 期望时间
+      options:
+        - 两个工作日内
+        - 一周内
+        - 时间灵活
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: 提交确认
+      options:
+        - label: 我有权申请此Skill或公开仓库的质量审计。
+          required: true
+        - label: 此公开Issue不含账号密码、密钥、个人信息、客户数据、私有链接或保密材料。
+          required: true
+        - label: 我理解安全测试、提示词注入红队测试、私有仓库访问和生产环境凭据不在此起始范围内。
+          required: true
+        - label: 我理解双方需要另行确认范围、付款、仓库授权和验收标准，服务才会开始。
+          required: true

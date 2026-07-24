@@ -1,0 +1,115 @@
+name: AI Agent Skill QA request
+description: Request a paid, fixed-scope QA review of one public agent Skill repository
+title: "[Agent Skill QA] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this public form for a sanitized first request about one public agent Skill repository.
+
+        Do not post credentials, API keys, personal data, customer data, private repositories, private URLs, production exports, or confidential material. Use the private contact path on the LaunchClear service page when the request cannot be described safely in public.
+
+        Opening an issue starts a scope review. Work begins only after both parties confirm scope, payment, repository authorization, and acceptance criteria in writing.
+
+  - type: dropdown
+    id: starting_point
+    attributes:
+      label: Requested starting point
+      description: Choose the closest fixed-scope option.
+      options:
+        - USD 150 AI Agent Skill QA
+        - RMB 999 AI Agent Skill QA
+        - I need a separate quote
+        - I need scope clarification first
+    validations:
+      required: true
+
+  - type: input
+    id: public_repository
+    attributes:
+      label: Public Skill repository
+      description: Link to the public repository or public Skill directory to review.
+      placeholder: https://github.com/example/example-skill
+    validations:
+      required: true
+
+  - type: dropdown
+    id: target_environment
+    attributes:
+      label: Primary target environment
+      options:
+        - Codex
+        - Claude Code
+        - OpenClaw
+        - Generic SKILL.md compatible agent
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: representative_tasks
+    attributes:
+      label: Representative user tasks
+      description: Provide up to five short tasks that the Skill should handle reliably.
+      placeholder: |
+        1. Audit a SaaS landing page for China launch readiness.
+        2. Produce a bilingual terminology review.
+        3. Explain when the Skill should stop and request user input.
+    validations:
+      required: true
+
+  - type: textarea
+    id: observed_problem
+    attributes:
+      label: Observed problem or uncertainty
+      description: Describe missed triggers, irrelevant activation, incomplete outputs, unclear boundaries, or another reproducible concern.
+      placeholder: The Skill is not selected for a direct localization request, or it produces an incomplete launch checklist.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected behavior
+      description: State what a successful result should contain and any important stopping conditions.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: requested_outputs
+    attributes:
+      label: Requested outputs
+      description: Select the outputs that matter most.
+      options:
+        - label: Trigger and task coverage matrix
+        - label: Instruction and boundary review
+        - label: Up to three prioritized reproducible findings
+        - label: One bounded patch or implementation checklist
+        - label: One post-change retest
+    validations:
+      required: true
+
+  - type: dropdown
+    id: timing
+    attributes:
+      label: Preferred timing
+      options:
+        - Within 2 business days
+        - Within 1 week
+        - Flexible
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: I am authorized to request QA work on this Skill or public repository.
+          required: true
+        - label: This public issue contains no credentials, secrets, personal data, customer data, private links, or confidential material.
+          required: true
+        - label: I understand that security testing, prompt-injection red teaming, private-repository access, and production credentials are outside this starting scope.
+          required: true
+        - label: I understand that scope, payment, repository authorization, and acceptance criteria must be confirmed separately before work begins.
+          required: true
