@@ -47,6 +47,8 @@ The samples may be discussed as examples of current analysis and delivery prepar
 3. **Public Data Signal Audit: USD 150 or RMB 999.** Review of one public CSV or JSON dataset, or one buyer-authorized sanitized export of up to 5,000 rows. Delivery includes a data dictionary, validation results, a reproducible Python and SQLite analysis, up to three evidence-backed findings, one accessible chart, and a short decision note within two business days after complete inputs, confirmed scope, and verified payment. It excludes personal or regulated data, private-system access, predictive guarantees, and automated decisions about people.
 4. **AI Agent Skill QA: USD 150 or RMB 999.** Review of one public Skill repository against up to five representative user tasks. Delivery includes a trigger and task coverage matrix, instruction and boundary review, up to three prioritized reproducible findings, one bounded patch or implementation checklist, and one post-change retest within two business days after complete inputs, confirmed scope, and verified payment. It excludes security testing, prompt-injection red teaming, private-repository access, production credentials, and multi-agent deployment guarantees.
 
+   Inspect the [fictional Lead Summary Skill QA sample](agent-skill-qa-sample/) with a five-task coverage matrix, three reproducible findings, a bounded before-and-after patch, and seven deterministic retests.
+
 The international and mainland China prices depend on a mutually usable billing and payment path. No revenue, conversion, market-access, regulatory, or production outcome is guaranteed.
 
 ### Start a request
