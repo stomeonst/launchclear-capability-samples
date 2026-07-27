@@ -26,6 +26,7 @@ This repository contains independently prepared capability samples. Each sample 
 | [Public Trend Signal MVP](https://github.com/stomeonst/public-trend-signal-mvp) | A fictional, executable data pipeline with normalization, duplicate control, deterministic ranking, explicit classification rules, a human-review queue, Feishu-compatible CSV output, run receipts, hashes, and tests | Fictional fixture and proof published 2026-07-27 |
 | [EvidenceGate AgentOps](evidencegate-agentops/) | A credential-free multi-agent repair prototype with machine-readable scope control, sensitive-data blocking, minimal repair proposals, rollback instructions, independent verification, deterministic receipts, and a required human approval terminal | Fictional fixture and proof published 2026-07-27 |
 | [EvidenceGate for Data Changes](datahub-evidencegate/) | A lightweight DataHub impact-analysis prototype with fixture and authorized CLI modes, schema and ownership checks, downstream-lineage findings, rollback guidance, deterministic receipts, preview-only write-back, and a required human approval terminal | Fictional DataHub-style fixture and proof published 2026-07-27 |
+| [TypeScript Agent Harness](typescript-agent-harness/) | A credential-free TypeScript tool loop with an allowlist, context bounds, sensitive-input blocking, deterministic receipts, async tools, and a required human approval state before external messaging | Fictional fixture and proof published 2026-07-27 |
 
 ## Verified public QA follow-through
 
