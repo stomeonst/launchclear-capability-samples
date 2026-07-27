@@ -1,0 +1,73 @@
+{
+  "context": {
+    "urn": "urn:li:dataset:(urn:li:dataPlatform:snowflake,analytics.orders,PROD)",
+    "name": "analytics.orders",
+    "schema_fields": [
+      "order_id",
+      "customer_email",
+      "order_total",
+      "created_at"
+    ],
+    "owners": [
+      "urn:li:corpuser:data_steward"
+    ],
+    "downstream_urns": [
+      "urn:li:dataset:(urn:li:dataPlatform:dbt,analytics.customer_ltv,PROD)",
+      "urn:li:dashboard:(looker,executive_revenue)"
+    ],
+    "quality_signals": [
+      "freshness assertion passed",
+      "customer_email null-rate assertion monitored"
+    ],
+    "source": "fixture:catalog.json"
+  },
+  "plan": {
+    "request_id": "DH-DEMO-001",
+    "target_urn": "urn:li:dataset:(urn:li:dataPlatform:snowflake,analytics.orders,PROD)",
+    "removed_fields": [
+      "customer_email"
+    ],
+    "impacted_downstream_urns": [
+      "urn:li:dataset:(urn:li:dataPlatform:dbt,analytics.customer_ltv,PROD)",
+      "urn:li:dashboard:(looker,executive_revenue)"
+    ],
+    "findings": [
+      {
+        "code": "downstream_dependency",
+        "severity": "high",
+        "evidence": "urn:li:dataset:(urn:li:dataPlatform:dbt,analytics.customer_ltv,PROD) depends on the target asset."
+      },
+      {
+        "code": "downstream_dependency",
+        "severity": "high",
+        "evidence": "urn:li:dashboard:(looker,executive_revenue) depends on the target asset."
+      },
+      {
+        "code": "quality_signal",
+        "severity": "medium",
+        "evidence": "freshness assertion passed"
+      },
+      {
+        "code": "quality_signal",
+        "severity": "medium",
+        "evidence": "customer_email null-rate assertion monitored"
+      }
+    ],
+    "rollback": "Restore the original schema, re-run downstream validation, and remove the proposed DataHub documentation note.",
+    "writeback_preview": "Preview only: add a DataHub documentation note recording request DH-DEMO-001, proposed removal customer_email, and impacted downstream assets. No mutation has been executed.",
+    "state": "human_approval_required"
+  },
+  "receipt": {
+    "request_id": "DH-DEMO-001",
+    "state": "human_approval_required",
+    "input_hash": "f2be2aa7f77d3656b45b70b65c61da64f5efeb498b4e560eab381a1ebb57b68e",
+    "context_hash": "eb95a4d44eab567b819ed0103a4edc622afa44180fc3ee654a87963437445cf1",
+    "plan_hash": "f5db32a363a82583a86bb63d9a6fbeef50fb7efe7426165f7df1c23cce12820c",
+    "approval_required": true,
+    "trace": [
+      "received",
+      "context_collected",
+      "human_approval_required"
+    ]
+  }
+}

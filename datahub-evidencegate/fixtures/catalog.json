@@ -1,0 +1,24 @@
+{
+  "entities": {
+    "urn:li:dataset:(urn:li:dataPlatform:snowflake,analytics.orders,PROD)": {
+      "name": "analytics.orders",
+      "schema_fields": [
+        "order_id",
+        "customer_email",
+        "order_total",
+        "created_at"
+      ],
+      "owners": [
+        "urn:li:corpuser:data_steward"
+      ],
+      "downstream_urns": [
+        "urn:li:dataset:(urn:li:dataPlatform:dbt,analytics.customer_ltv,PROD)",
+        "urn:li:dashboard:(looker,executive_revenue)"
+      ],
+      "quality_signals": [
+        "freshness assertion passed",
+        "customer_email null-rate assertion monitored"
+      ]
+    }
+  }
+}
