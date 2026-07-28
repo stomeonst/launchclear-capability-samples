@@ -1,0 +1,63 @@
+{
+  "sample_id": "fictional-checkout-dashboard-001",
+  "asset": "assets/fictional-checkout-dashboard.svg",
+  "asset_origin": "Synthetic SVG created by LaunchClear for this public capability sample.",
+  "contains_real_customer_data": false,
+  "evaluation_version": "1.0",
+  "overall_label": "needs_revision",
+  "overall_score": 58,
+  "score_scale": {
+    "minimum": 0,
+    "maximum": 100,
+    "higher_is_better": true
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "category": "data_consistency",
+      "severity": "critical",
+      "region": "summary_cards",
+      "evidence": "The summary shows 1,240 orders, 1,010 successful orders, and 190 failed orders. The visible outcomes total 1,200, leaving 40 orders unexplained.",
+      "recommendation": "Add the missing outcome category or correct the totals, then verify that all outcome counts sum to the order total."
+    },
+    {
+      "id": "F2",
+      "category": "visual_alignment",
+      "severity": "major",
+      "region": "failed_summary_card",
+      "evidence": "The Failed card begins 12 pixels lower than the other summary cards, breaking the shared baseline.",
+      "recommendation": "Align all summary cards to the same vertical origin and height."
+    },
+    {
+      "id": "F3",
+      "category": "semantic_encoding",
+      "severity": "major",
+      "region": "checkout_outcomes_chart",
+      "evidence": "Retry and Failed use the same amber color, so color alone cannot distinguish the two outcomes.",
+      "recommendation": "Use distinct colors and add direct values or patterns so the chart remains interpretable without relying only on color."
+    },
+    {
+      "id": "F4",
+      "category": "text_legibility",
+      "severity": "major",
+      "region": "average_order_value_card",
+      "evidence": "The label uses very light gray text on white and is truncated as Average order val..., reducing readability and precision.",
+      "recommendation": "Increase contrast and provide the complete label Average order value."
+    },
+    {
+      "id": "F5",
+      "category": "text_truncation",
+      "severity": "minor",
+      "region": "review_queue",
+      "evidence": "Unclear payment status is visibly truncated, and no expansion mechanism is shown.",
+      "recommendation": "Allow the row label to wrap or expose the full value with an accessible details control."
+    }
+  ],
+  "acceptance_checks": [
+    "Summary outcome counts reconcile to total orders.",
+    "All four summary cards share the same top and bottom alignment.",
+    "Each chart outcome has a distinct visual encoding and a direct text label.",
+    "All labels meet normal text contrast guidance and display their complete meaning.",
+    "Queue reasons remain readable at the target viewport without unexplained truncation."
+  ]
+}
