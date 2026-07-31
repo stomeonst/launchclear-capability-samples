@@ -1,0 +1,85 @@
+name: 开发者工具首次使用审计
+description: 提交一个开发者入门流程的固定范围付费审计需求
+title: "[开发者入门审计] "
+labels:
+  - service-request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        此表单会创建公开Issue，请只提交公开或已脱敏的初步需求。请勿填写账号密码、API密钥、个人信息、客户数据、私有仓库、私有链接、生产环境导出文件或保密材料。
+
+        创建Issue仅表示申请范围评估。双方以书面方式确认范围、付款、访问边界和验收标准后，服务才会开始。
+  - type: dropdown
+    id: starting_point
+    attributes:
+      label: 起始服务
+      options:
+        - 人民币699元开发者工具首次使用审计
+        - 99美元开发者工具首次使用审计
+        - 需要先确认范围
+    validations:
+      required: true
+  - type: input
+    id: public_product
+    attributes:
+      label: 公开产品或文档网址
+      placeholder: https://example.com/docs/getting-started
+    validations:
+      required: true
+  - type: dropdown
+    id: product_type
+    attributes:
+      label: 产品类型
+      options:
+        - API或SDK
+        - 命令行工具
+        - 开发者控制台
+        - 开发文档
+        - Agent工具或集成
+        - 其他开发者产品
+    validations:
+      required: true
+  - type: textarea
+    id: first_value_task
+    attributes:
+      label: 首次价值任务
+      description: 描述新开发者应当完成的第一个有用结果。
+      placeholder: 安装命令行工具，创建最小配置，并成功完成本地预览。
+    validations:
+      required: true
+  - type: textarea
+    id: target_user
+    attributes:
+      label: 目标开发者
+      description: 描述相关角色、经验水平和预期起始知识。
+    validations:
+      required: true
+  - type: textarea
+    id: known_friction
+    attributes:
+      label: 已知摩擦或不确定点
+      description: 只填写公开或已脱敏的例子。
+  - type: dropdown
+    id: timing
+    attributes:
+      label: 期望时间
+      options:
+        - 两个工作日内
+        - 一周内
+        - 时间灵活
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: 提交确认
+      options:
+        - label: 我有权申请此项评测。
+          required: true
+        - label: 此公开Issue不含账号密码、密钥、个人信息、客户数据、私有链接或保密材料。
+          required: true
+        - label: 我理解安全测试、生产环境访问和转化保证不在此起始范围内。
+          required: true
+        - label: 我理解双方需要另行确认范围、付款、访问边界和验收标准，服务才会开始。
+          required: true

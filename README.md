@@ -28,6 +28,7 @@ This repository contains independently prepared capability samples. Each sample 
 | [EvidenceGate for Data Changes](datahub-evidencegate/) | A lightweight DataHub impact-analysis prototype with fixture and authorized CLI modes, schema and ownership checks, downstream-lineage findings, rollback guidance, deterministic receipts, preview-only write-back, and a required human approval terminal | Fictional DataHub-style fixture and proof published 2026-07-27 |
 | [TypeScript Agent Harness](typescript-agent-harness/) | A credential-free TypeScript tool loop with an allowlist, context bounds, sensitive-input blocking, deterministic receipts, async tools, and a required human approval state before external messaging | Fictional fixture and proof published 2026-07-27 |
 | [Fictional Image Evaluation Sample](image-evaluation-sample/) | A synthetic dashboard, machine-readable annotations, bilingual evaluation report, five evidence-based findings, acceptance checks, and automated annotation-contract validation | Fictional image and proof prepared 2026-07-28 |
+| [Developer Tool First-Run Audit Sample](developer-onboarding-audit-sample/) | A fictional developer onboarding evaluation with a timestamped evidence timeline, time-to-first-value target, five-dimension scorecard, prioritized findings, acceptance checks, and bilingual request paths | Fictional scenario prepared 2026-08-01 |
 
 ## Verified public QA follow-through
 
@@ -50,6 +51,9 @@ The samples may be discussed as examples of current analysis and delivery prepar
 
    Inspect the [fictional Lead Summary Skill QA sample](agent-skill-qa-sample/) with a five-task coverage matrix, three reproducible findings, a bounded before-and-after patch, and seven deterministic retests.
 5. **Chinese AI Output QA Pilot: USD 99 or RMB 699.** Review of up to 100 buyer-provided, sanitized Simplified Chinese outputs against one agreed rubric. Delivery includes a scored review sheet, error taxonomy, up to five representative corrections, recurring-error summary, and one acceptance note within two business days after complete inputs, confirmed scope, and verified payment. It excludes personal or regulated data, security testing, model training, production access, and claims about model-wide performance.
+6. **Developer Tool First-Run Audit: USD 99 or RMB 699.** Evaluate one public developer tool, API, SDK, CLI, dashboard, or documentation flow against one agreed first-value task. Delivery includes a timestamped evidence timeline, five-dimension scorecard, up to five prioritized findings, and acceptance checks within two business days after complete inputs, confirmed scope, and verified payment. It excludes security testing, production credentials, private repository access, customer interviews, destructive actions, and conversion guarantees.
+
+   Review the [fictional Developer Tool First-Run Audit sample](developer-onboarding-audit-sample/) before requesting work.
 
 The international and mainland China prices depend on a mutually usable billing and payment path. No revenue, conversion, market-access, regulatory, or production outcome is guaranteed.
 
@@ -63,7 +67,9 @@ The international and mainland China prices depend on a mutually usable billing 
 6. [用中文提交公开且已脱敏的AI Agent Skill质量审计需求](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=agent-skill-qa-request-zh.yml)。
 7. [Submit a public, sanitized Chinese AI Output QA request in English](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=chinese-ai-output-qa-request.yml).
 8. [用中文提交公开且已脱敏的中文AI输出质量审查需求](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=chinese-ai-output-qa-request-zh.yml)。
-9. [Use the private email path](mailto:stomeonst123@gmail.com?subject=LaunchClear%20fixed-scope%20service%20request&body=Hi%20Chris%2C%0A%0AI%27m%20interested%20in%3A%0AProduct%2C%20workflow%2C%20Skill%2C%20or%20public%20dataset%3A%0AProblem%20to%20solve%3A%0ADesired%20outcome%3A%0ATimeline%3A%0A%0AThanks%2C) when a safe first description cannot be posted publicly.
+9. [Submit a public, sanitized Developer Tool First-Run Audit request in English](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=developer-onboarding-audit-request.yml).
+10. [用中文提交公开且已脱敏的开发者工具首次使用审计需求](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=developer-onboarding-audit-request-zh.yml)。
+11. [Use the private email path](mailto:stomeonst123@gmail.com?subject=LaunchClear%20fixed-scope%20service%20request&body=Hi%20Chris%2C%0A%0AI%27m%20interested%20in%3A%0AProduct%2C%20workflow%2C%20Skill%2C%20or%20public%20dataset%3A%0AProblem%20to%20solve%3A%0ADesired%20outcome%3A%0ATimeline%3A%0A%0AThanks%2C) when a safe first description cannot be posted publicly.
 
 Do not place credentials, API keys, personal data, customer data, private URLs, production exports, or confidential logs in a GitHub issue. Creating a request does not create a contract or start work. Scope, payment, access boundaries, and acceptance criteria must be confirmed separately in writing.
 

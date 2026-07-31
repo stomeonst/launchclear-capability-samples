@@ -1,0 +1,85 @@
+name: Developer Tool First-Run Audit
+description: Request a paid, fixed-scope audit of one developer onboarding flow
+title: "[Developer Onboarding Audit] "
+labels:
+  - service-request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this public form for a sanitized first request. Do not post credentials, API keys, personal data, customer data, private repositories, private URLs, production exports, or confidential material.
+
+        Opening an issue starts a scope review. Work begins only after both parties confirm scope, payment, access boundaries, and acceptance criteria in writing.
+  - type: dropdown
+    id: starting_point
+    attributes:
+      label: Requested starting point
+      options:
+        - USD 99 Developer Tool First-Run Audit
+        - RMB 699 Developer Tool First-Run Audit
+        - I need scope clarification first
+    validations:
+      required: true
+  - type: input
+    id: public_product
+    attributes:
+      label: Public product or documentation URL
+      placeholder: https://example.com/docs/getting-started
+    validations:
+      required: true
+  - type: dropdown
+    id: product_type
+    attributes:
+      label: Product type
+      options:
+        - API or SDK
+        - CLI
+        - Developer dashboard
+        - Documentation
+        - Agent tool or integration
+        - Other developer product
+    validations:
+      required: true
+  - type: textarea
+    id: first_value_task
+    attributes:
+      label: First-value task
+      description: Describe the first useful result a new developer should reach.
+      placeholder: Install the CLI, create a minimal configuration, and produce a successful local preview.
+    validations:
+      required: true
+  - type: textarea
+    id: target_user
+    attributes:
+      label: Intended developer
+      description: Describe the relevant role, experience level, and expected starting knowledge.
+    validations:
+      required: true
+  - type: textarea
+    id: known_friction
+    attributes:
+      label: Known friction or uncertainty
+      description: Use public or sanitized examples only.
+  - type: dropdown
+    id: timing
+    attributes:
+      label: Preferred timing
+      options:
+        - Within 2 business days
+        - Within 1 week
+        - Flexible
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: I am authorized to request this evaluation.
+          required: true
+        - label: This public issue contains no credentials, secrets, personal data, customer data, private links, or confidential material.
+          required: true
+        - label: I understand that security testing, production access, and conversion guarantees are outside this starting scope.
+          required: true
+        - label: I understand that scope, payment, access boundaries, and acceptance criteria must be confirmed separately before work begins.
+          required: true
