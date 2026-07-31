@@ -1,0 +1,70 @@
+name: 中文 AI 输出质量审查试单
+description: 申请审查最多100条已脱敏的简体中文输出
+title: "[中文AI输出质检] "
+labels:
+  - service-request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        此公开表单用于申请人民币699元的固定范围试单。请勿填写个人信息、客户数据、账号凭据、私有链接、机密提示词或生产数据。提交需求不会自动建立合同，也不会自动开始工作。
+  - type: input
+    id: organization
+    attributes:
+      label: 机构或产品
+      description: 可填写公开名称，也可以使用不涉及机密的中性描述。
+      placeholder: 公开产品名称，或“消费产品客服助手”
+    validations:
+      required: true
+  - type: dropdown
+    id: output_count
+    attributes:
+      label: 输出数量
+      options:
+        - 1至25条
+        - 26至50条
+        - 51至100条
+    validations:
+      required: true
+  - type: textarea
+    id: use_case
+    attributes:
+      label: 用户场景与目标结果
+      description: 说明谁会阅读这些中文输出、他们要完成什么任务，以及合格输出应达到什么效果。
+      placeholder: 输出用于回答中国大陆用户的公开产品问题，需要准确、清楚、自然的简体中文。
+    validations:
+      required: true
+  - type: checkboxes
+    id: review_dimensions
+    attributes:
+      label: 审查维度
+      options:
+        - label: 指令遵循
+        - label: 对照买方提供的公开资料核验事实依据
+        - label: 简体中文语言质量与自然度
+        - label: 实用性与清晰度
+        - label: 风险处理与无依据承诺
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: 公开参考资料
+      description: 这里只填写公开网址。已脱敏的样例输出应在范围和数据边界确认后提供。
+      placeholder: https://example.com/public-documentation
+  - type: input
+    id: deadline
+    attributes:
+      label: 希望交付日期
+      placeholder: YYYY-MM-DD和时区
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: 安全确认
+      options:
+        - label: 我没有在此需求中填写账号凭据、个人信息、客户数据、私有链接、机密提示词、受监管数据或生产数据。
+          required: true
+        - label: 我理解双方需要另行书面确认范围、付款、输入数据处理方式和验收标准后才能开始工作。
+          required: true

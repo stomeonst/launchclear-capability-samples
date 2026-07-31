@@ -1,0 +1,70 @@
+name: Chinese AI Output QA Pilot
+description: Request a fixed-scope review of up to 100 sanitized Simplified Chinese outputs
+title: "[Chinese AI Output QA] "
+labels:
+  - service-request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This public form is for the USD 99 fixed-scope pilot. Describe the work without including personal data, customer data, credentials, private URLs, confidential prompts, or production exports. A submitted issue does not create a contract or start work.
+  - type: input
+    id: organization
+    attributes:
+      label: Organization or product
+      description: A public name or a neutral description is enough.
+      placeholder: Public product name or "consumer support assistant"
+    validations:
+      required: true
+  - type: dropdown
+    id: output_count
+    attributes:
+      label: Number of outputs
+      options:
+        - 1 to 25
+        - 26 to 50
+        - 51 to 100
+    validations:
+      required: true
+  - type: textarea
+    id: use_case
+    attributes:
+      label: User scenario and desired outcome
+      description: Explain who reads the Chinese output, what they are trying to do, and what a successful answer should achieve.
+      placeholder: The outputs answer public product questions for mainland China users. We need clear, accurate, natural Simplified Chinese.
+    validations:
+      required: true
+  - type: checkboxes
+    id: review_dimensions
+    attributes:
+      label: Review dimensions
+      options:
+        - label: Instruction following
+        - label: Factual support against buyer-provided public references
+        - label: Simplified Chinese language quality and naturalness
+        - label: Usefulness and clarity
+        - label: Risk handling and unsupported claims
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: Public reference material
+      description: Add public URLs only. Sanitized sample outputs can be shared after scope and access boundaries are confirmed.
+      placeholder: https://example.com/public-documentation
+  - type: input
+    id: deadline
+    attributes:
+      label: Desired delivery date
+      placeholder: YYYY-MM-DD and timezone
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I have not included credentials, personal data, customer data, private URLs, confidential prompts, regulated data, or production exports in this issue.
+          required: true
+        - label: I understand that scope, payment, input handling, and acceptance criteria must be confirmed separately in writing before work starts.
+          required: true
