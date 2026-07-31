@@ -49,6 +49,7 @@ The samples may be discussed as examples of current analysis and delivery prepar
 4. **AI Agent Skill QA: USD 150 or RMB 999.** Review of one public Skill repository against up to five representative user tasks. Delivery includes a trigger and task coverage matrix, instruction and boundary review, up to three prioritized reproducible findings, one bounded patch or implementation checklist, and one post-change retest within two business days after complete inputs, confirmed scope, and verified payment. It excludes security testing, prompt-injection red teaming, private-repository access, production credentials, and multi-agent deployment guarantees.
 
    Inspect the [fictional Lead Summary Skill QA sample](agent-skill-qa-sample/) with a five-task coverage matrix, three reproducible findings, a bounded before-and-after patch, and seven deterministic retests.
+5. **Chinese AI Output QA Pilot: USD 99 or RMB 699.** Review of up to 100 buyer-provided, sanitized Simplified Chinese outputs against one agreed rubric. Delivery includes a scored review sheet, error taxonomy, up to five representative corrections, recurring-error summary, and one acceptance note within two business days after complete inputs, confirmed scope, and verified payment. It excludes personal or regulated data, security testing, model training, production access, and claims about model-wide performance.
 
 The international and mainland China prices depend on a mutually usable billing and payment path. No revenue, conversion, market-access, regulatory, or production outcome is guaranteed.
 
