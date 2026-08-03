@@ -1,25 +1,24 @@
-name: 自动化修复需求
-description: 提交一个已获授权工作流的固定范围付费诊断需求
-title: "[自动化修复] "
+name: Lead-to-CRM上线验收
+description: 提交一个已获授权Lead-to-CRM工作流的固定范围付费验收需求
+title: "[Lead-to-CRM上线验收] "
 body:
   - type: markdown
     attributes:
       value: |
-        此表单创建公开Issue，请只提交经过脱敏的初步需求。
+        此表单创建公开Issue，请只提交经过脱敏的初步需求。范围为一条已有Lead-to-CRM工作流、最多两个外部系统和十二项可复现检查。
 
         请勿填写账号密码、API密钥、个人信息、客户数据、私有链接、生产环境导出文件或保密日志。无法公开描述的需求，请通过LaunchClear服务页面中的私密联系入口沟通。
 
-        创建Issue仅表示申请范围评估。双方以书面方式确认范围、付款、访问边界和验收标准后，服务才会开始。
+        创建Issue仅表示申请范围评估。双方以书面方式确认范围、付款、访问边界和验收标准后，服务才会开始。固定价格为人民币999元或139美元，完整输入与到账确认后48小时内交付首版。
 
   - type: dropdown
     id: starting_point
     attributes:
-      label: 起始服务
-      description: 请选择最接近的固定范围服务。
+      label: 起始价格
+      description: 请选择适用的固定范围价格。
       options:
-        - 人民币799元自动化修复
-        - 120美元自动化修复
-        - 需要单独报价
+        - 人民币999元Lead-to-CRM上线验收
+        - 139美元Lead-to-CRM上线验收
         - 需要先确认范围
     validations:
       required: true
@@ -27,11 +26,14 @@ body:
   - type: dropdown
     id: platform
     attributes:
-      label: 主要平台
+      label: 线索来源或工作流平台
       options:
         - Make
         - Zapier
         - n8n
+        - HubSpot
+        - Close CRM
+        - Pipedrive
         - Airtable
         - 网页表单或Webhook
         - 其他
@@ -43,7 +45,7 @@ body:
     attributes:
       label: 工作流目标
       description: 用一句话描述希望实现的业务结果。
-      placeholder: 合格表单提交后，在Airtable中创建或更新一条记录。
+      placeholder: 合格表单提交后，只创建或更新一条CRM记录，并保留同意状态。
     validations:
       required: true
 
@@ -61,7 +63,7 @@ body:
     attributes:
       label: 预期结果
       description: 说明什么结果可以通过验收。
-      placeholder: 正确映射邮箱字段，相同标准化邮箱再次提交时更新已有记录。
+      placeholder: 创建一条正确分配负责人的CRM记录，抑制重复事件，并把不确定情况交给人工复核。
     validations:
       required: true
 

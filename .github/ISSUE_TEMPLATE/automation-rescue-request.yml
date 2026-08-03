@@ -1,25 +1,24 @@
-name: Automation Rescue request
-description: Request a paid, fixed-scope review of one authorized workflow
-title: "[Automation Rescue] "
+name: Lead-to-CRM release gate
+description: Request a paid, fixed-scope acceptance review of one authorized Lead-to-CRM workflow
+title: "[Lead-to-CRM release gate] "
 body:
   - type: markdown
     attributes:
       value: |
-        Use this public form for a sanitized first request.
+        Use this public form for a sanitized request covering one existing Lead-to-CRM workflow, up to two connected systems, and twelve reproducible checks.
 
         Do not post credentials, API keys, personal data, customer data, private URLs, production exports, or confidential logs. Use the private contact path on the LaunchClear service page when the request cannot be described safely in public.
 
-        Opening an issue starts a scope review. Work begins only after both parties confirm scope, payment, access boundaries, and acceptance criteria in writing.
+        Opening an issue starts a scope review. Work begins only after both parties confirm scope, payment, access boundaries, and acceptance criteria in writing. The fixed price is USD 139 and the first report is delivered within 48 hours after complete inputs and verified payment.
 
   - type: dropdown
     id: starting_point
     attributes:
       label: Requested starting point
-      description: Choose the closest fixed-scope option.
+      description: Choose the applicable fixed-scope price.
       options:
-        - USD 120 Automation Rescue
-        - RMB 799 Automation Rescue
-        - I need a separate quote
+        - USD 139 Lead-to-CRM release gate
+        - RMB 999 Lead-to-CRM release gate
         - I need scope clarification first
     validations:
       required: true
@@ -27,11 +26,14 @@ body:
   - type: dropdown
     id: platform
     attributes:
-      label: Primary platform
+      label: Lead source or workflow platform
       options:
         - Make
         - Zapier
         - n8n
+        - HubSpot
+        - Close CRM
+        - Pipedrive
         - Airtable
         - Web form or webhook
         - Other
@@ -43,7 +45,7 @@ body:
     attributes:
       label: Workflow goal
       description: Describe the business outcome in one sentence.
-      placeholder: When a qualified form is submitted, create or update one Airtable record.
+      placeholder: When a qualified form is submitted, create or update exactly one CRM record and preserve the consent state.
     validations:
       required: true
 
@@ -61,7 +63,7 @@ body:
     attributes:
       label: Expected behavior
       description: State the result that would count as a successful repair.
-      placeholder: Map the email field correctly and update the existing record when the normalized email already exists.
+      placeholder: Create one correctly owned CRM record, suppress duplicate events, and route uncertain cases for human review.
     validations:
       required: true
 

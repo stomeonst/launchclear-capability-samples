@@ -54,17 +54,9 @@ The international and mainland China prices depend on a mutually usable billing 
 
 ### Start a request
 
-1. [Submit a public, sanitized Automation Rescue request in English](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=automation-rescue-request.yml).
-2. [用中文提交公开且已脱敏的自动化修复需求](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=automation-rescue-request-zh.yml)。
-3. [Submit a public, sanitized Data Signal Audit request in English](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=data-signal-audit-request.yml).
-4. [用中文提交公开且已脱敏的数据洞察审计需求](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=data-signal-audit-request-zh.yml)。
-5. [Submit a public, sanitized AI Agent Skill QA request in English](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=agent-skill-qa-request.yml).
-6. [用中文提交公开且已脱敏的AI Agent Skill质量审计需求](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=agent-skill-qa-request-zh.yml)。
-7. [Submit a public, sanitized Chinese AI Output QA request in English](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=chinese-ai-output-qa-request.yml).
-8. [用中文提交公开且已脱敏的中文AI输出质量审查需求](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=chinese-ai-output-qa-request-zh.yml)。
-9. [Submit a public, sanitized Developer Tool First-Run Audit request in English](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=developer-onboarding-audit-request.yml).
-10. [用中文提交公开且已脱敏的开发者工具首次使用审计需求](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=developer-onboarding-audit-request-zh.yml)。
-11. [Use the private email path](mailto:stomeonst123@gmail.com?subject=LaunchClear%20Lead-to-CRM%20release%20gate&body=Hi%20Gang%20Qu%2C%0A%0AWorkflow%20stage%3A%0ATwo%20connected%20systems%3A%0AMain%20release%20risk%3A%0ASanitized%20evidence%20available%3A%0ATarget%20release%20date%3A%0A%0AThanks%2C) when a safe first description cannot be posted publicly.
+1. [Submit a public, sanitized Lead-to-CRM release-gate request in English](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=automation-rescue-request.yml).
+2. [用中文提交公开且已脱敏的Lead-to-CRM上线验收需求](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=automation-rescue-request-zh.yml)。
+3. [Use the private email path](mailto:stomeonst123@gmail.com?subject=LaunchClear%20Lead-to-CRM%20release%20gate&body=Hi%20Gang%20Qu%2C%0A%0AWorkflow%20stage%3A%0ATwo%20connected%20systems%3A%0AMain%20release%20risk%3A%0ASanitized%20evidence%20available%3A%0ATarget%20release%20date%3A%0A%0AThanks%2C) when a safe first description cannot be posted publicly.
 
 Do not place credentials, API keys, personal data, customer data, private URLs, production exports, or confidential logs in a GitHub issue. Creating a request does not create a contract or start work. Scope, payment, access boundaries, and acceptance criteria must be confirmed separately in writing.
 
