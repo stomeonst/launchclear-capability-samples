@@ -78,4 +78,6 @@ This recommendation applies only to the fictional fixture. It does not prove tha
 
 The current fixed-scope service covers one existing workflow, up to two connected systems, and twelve reproducible checks. It delivers a boundary map, test matrix, evidence-linked findings, a release recommendation, and one bounded retest within 48 hours after complete sanitized inputs, confirmed scope, and verified payment.
 
+Typical review inputs can come from Airtable, Make, n8n, Zapier, forms, webhooks, CRM exports, or replayable logs. Listing a platform describes an eligible review input; it does not claim a paid client delivery on that platform.
+
 The service excludes security testing, regulated-data review, production credentials, real customer data in public channels, destructive operations, a new multi-system implementation, and guarantees about revenue, conversion, compliance, or absolute reliability.

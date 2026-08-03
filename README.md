@@ -46,6 +46,8 @@ The samples may be discussed as examples of current analysis and delivery prepar
 
 **Lead-to-CRM AI Workflow Release Gate: USD 139 or RMB 999.** The review covers one existing lead-to-CRM workflow, up to two connected systems, and twelve reproducible checks. Delivery includes a workflow boundary map, test matrix, evidence-linked issue log, release recommendation, and one bounded retest. The first report is delivered within 48 hours after complete sanitized inputs, confirmed scope, and verified payment.
 
+Typical review inputs can come from Airtable, Make, n8n, Zapier, forms, webhooks, CRM exports, or replayable logs. Listing a platform describes an eligible review input; it does not claim a paid client delivery on that platform.
+
 The first pass accepts a redacted export, sandbox, replayable logs, or synthetic fixtures. It excludes production credentials, real customer data, destructive operations, security testing, regulated-data review, revenue guarantees, and a new multi-system implementation.
 
 The other samples in this repository remain capability references. They are not separate active sales offers.
