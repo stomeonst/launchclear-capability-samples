@@ -100,4 +100,3 @@ body:
           required: true
         - label: I understand that scope, payment, source authorization, and acceptance criteria must be confirmed separately before work begins.
           required: true
-

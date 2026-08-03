@@ -100,4 +100,3 @@ body:
           required: true
         - label: 我理解双方需要另行确认范围、付款、数据来源授权和验收标准，服务才会开始。
           required: true
-
