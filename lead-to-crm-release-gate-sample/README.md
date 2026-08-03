@@ -81,3 +81,9 @@ The current fixed-scope service covers one existing workflow, up to two connecte
 Typical review inputs can come from Airtable, Make, n8n, Zapier, forms, webhooks, CRM exports, or replayable logs. Listing a platform describes an eligible review input; it does not claim a paid client delivery on that platform.
 
 The service excludes security testing, regulated-data review, production credentials, real customer data in public channels, destructive operations, a new multi-system implementation, and guarantees about revenue, conversion, compliance, or absolute reliability.
+
+## Request a fixed-scope review
+
+The current price is USD 139 for international billing or RMB 999 for mainland China billing, subject to a mutually usable payment path. The first report is delivered within 48 hours after complete sanitized inputs, confirmed scope, and verified payment.
+
+[Email Gang Qu to check fit and payment availability](mailto:stomeonst123@gmail.com?subject=LaunchClear%20Lead-to-CRM%20release%20gate&body=Hi%20Gang%20Qu%2C%0A%0AWorkflow%20stage%3A%0ATwo%20connected%20systems%3A%0AMain%20release%20risk%3A%0ASanitized%20evidence%20available%3A%0ATarget%20release%20date%3A%0A%0AThanks%2C). Do not send credentials, personal data, customer data, private URLs, production exports, or confidential logs in the first message. An inquiry does not create a contract or start work.
