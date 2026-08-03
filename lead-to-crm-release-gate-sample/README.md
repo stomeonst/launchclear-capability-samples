@@ -59,6 +59,8 @@ Expected summary:
 
 The initial run reproduces only LC-06 and LC-07. The corrected run closes both findings while replaying the other ten cases. Every email address uses the reserved `example.test` domain. The runner makes no network request and writes to no external system.
 
+[Download the verified synthetic sample ZIP](https://github.com/stomeonst/launchclear-capability-samples/releases/download/lead-to-crm-release-gate-sample-v1.0.0/launchclear-lead-to-crm-release-gate-synthetic-sample-v1.0.0.zip). SHA256: `dd665263cb7dc0e24a3cae274c1a0e4419d50677ab0738a652635036ba08edfd`.
+
 Files:
 
 1. [`acceptance_matrix.csv`](acceptance_matrix.csv) provides the reviewable twelve-check matrix.
