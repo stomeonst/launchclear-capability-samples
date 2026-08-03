@@ -1,0 +1,13 @@
+check_id,release_condition,initial_result,corrected_result,evidence_boundary
+LC-01,Valid approved lead creates one traceable CRM record,pass,pass,Synthetic example.test record
+LC-02,Replay updates an existing normalized email without duplication,pass,pass,Synthetic existing-record set
+LC-03,Missing email is rejected before any CRM write,pass,pass,Synthetic empty input
+LC-04,Malformed email is rejected before any CRM write,pass,pass,Synthetic malformed input
+LC-05,Missing consent blocks CRM write and notification,pass,pass,Synthetic consent flag
+LC-06,Unknown campaign receives fallback ownership and a review task,fail,pass,Synthetic campaign code
+LC-07,Pending approval creates no notification,fail,pass,Synthetic approval state
+LC-08,Rejected approval creates no notification,pass,pass,Synthetic approval state
+LC-09,Approved state creates exactly one notification,pass,pass,Synthetic approval state
+LC-10,Transient CRM timeout retries without a duplicate,pass,pass,Synthetic write outcome sequence
+LC-11,Permanent CRM failure records evidence without false success,pass,pass,Synthetic write outcome sequence
+LC-12,Source evidence survives normalization and CRM handoff,pass,pass,Synthetic source field

@@ -40,6 +40,32 @@ Acceptance condition: only `approved` may create a notification. `pending`, `rej
 
 The fictional correction added a fallback owner, a review task, and a strict approval-state check. F-01 and F-02 passed on retest. The other ten fixtures were replayed and remained passing. Final result: twelve of twelve checks passed.
 
+## Reproduce the evidence
+
+The sample now includes a human-readable matrix, twelve synthetic fixture cases, a deterministic runner, and zero-dependency unit tests.
+
+```bash
+python3 run_acceptance.py --version initial
+python3 run_acceptance.py --version corrected
+python3 -m unittest -v test_release_gate.py
+```
+
+Expected summary:
+
+| Fixture state | Passed | Failed | Recommendation |
+| --- | ---: | ---: | --- |
+| Initial | 10 | 2 | Hold |
+| Corrected | 12 | 0 | Conditional release |
+
+The initial run reproduces only LC-06 and LC-07. The corrected run closes both findings while replaying the other ten cases. Every email address uses the reserved `example.test` domain. The runner makes no network request and writes to no external system.
+
+Files:
+
+1. [`acceptance_matrix.csv`](acceptance_matrix.csv) provides the reviewable twelve-check matrix.
+2. [`fixture_cases.json`](fixture_cases.json) contains the synthetic inputs and policy expectations.
+3. [`run_acceptance.py`](run_acceptance.py) simulates the initial and corrected fixture states.
+4. [`test_release_gate.py`](test_release_gate.py) verifies coverage, the two bounded findings, the clean retest, and the reserved-data boundary.
+
 ## Example release recommendation
 
 Conditional release. The actual business owner must confirm ownership rules, notification recipients, and consent-field meaning, then replay one real configuration in a sandbox. The first 24 hours should be observed for duplicate suppression, review-queue backlog, CRM write failures, and notification volume.

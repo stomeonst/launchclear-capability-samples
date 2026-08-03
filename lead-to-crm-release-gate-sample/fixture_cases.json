@@ -1,0 +1,74 @@
+[
+  {
+    "id": "LC-01",
+    "name": "valid approved lead creates one traceable record",
+    "input": {"submission_id": "sub-001", "email": "buyer.one@example.test", "consent": true, "approval_state": "approved", "campaign": "google", "source": "landing-page"},
+    "expected": {"status": "completed", "crm_action": "create", "crm_records": 1, "owner": "owner_growth", "review_tasks": 0, "notifications": 1, "evidence_status": "crm_write_succeeded", "source": "landing-page"}
+  },
+  {
+    "id": "LC-02",
+    "name": "replayed email updates without creating a duplicate",
+    "input": {"submission_id": "sub-002", "email": " Existing.Buyer@Example.Test ", "consent": true, "approval_state": "rejected", "campaign": "partner", "source": "partner-form", "existing_emails": ["existing.buyer@example.test"]},
+    "expected": {"status": "completed", "crm_action": "update", "crm_records": 1, "owner": "owner_partnerships", "review_tasks": 0, "notifications": 0, "evidence_status": "crm_write_succeeded", "source": "partner-form"}
+  },
+  {
+    "id": "LC-03",
+    "name": "missing email is rejected before the CRM write",
+    "input": {"submission_id": "sub-003", "email": "", "consent": true, "approval_state": "approved", "campaign": "google", "source": "landing-page"},
+    "expected": {"status": "rejected", "crm_action": "none", "crm_records": 0, "owner": null, "review_tasks": 0, "notifications": 0, "evidence_status": "invalid_email", "source": "landing-page"}
+  },
+  {
+    "id": "LC-04",
+    "name": "malformed email is rejected before the CRM write",
+    "input": {"submission_id": "sub-004", "email": "not-an-email", "consent": true, "approval_state": "approved", "campaign": "google", "source": "landing-page"},
+    "expected": {"status": "rejected", "crm_action": "none", "crm_records": 0, "owner": null, "review_tasks": 0, "notifications": 0, "evidence_status": "invalid_email", "source": "landing-page"}
+  },
+  {
+    "id": "LC-05",
+    "name": "missing consent blocks the CRM write and notification",
+    "input": {"submission_id": "sub-005", "email": "no.consent@example.test", "consent": false, "approval_state": "approved", "campaign": "google", "source": "landing-page"},
+    "expected": {"status": "rejected", "crm_action": "none", "crm_records": 0, "owner": null, "review_tasks": 0, "notifications": 0, "evidence_status": "consent_missing", "source": "landing-page"}
+  },
+  {
+    "id": "LC-06",
+    "name": "unknown campaign receives fallback ownership and review",
+    "input": {"submission_id": "sub-006", "email": "unknown.campaign@example.test", "consent": true, "approval_state": "approved", "campaign": "unknown-code", "source": "event-form"},
+    "expected": {"status": "completed", "crm_action": "create", "crm_records": 1, "owner": "owner_unassigned_review", "review_tasks": 1, "notifications": 1, "evidence_status": "crm_write_succeeded", "source": "event-form"}
+  },
+  {
+    "id": "LC-07",
+    "name": "pending approval creates no notification",
+    "input": {"submission_id": "sub-007", "email": "pending@example.test", "consent": true, "approval_state": "pending", "campaign": "google", "source": "landing-page"},
+    "expected": {"status": "completed", "crm_action": "create", "crm_records": 1, "owner": "owner_growth", "review_tasks": 0, "notifications": 0, "evidence_status": "crm_write_succeeded", "source": "landing-page"}
+  },
+  {
+    "id": "LC-08",
+    "name": "rejected approval creates no notification",
+    "input": {"submission_id": "sub-008", "email": "rejected@example.test", "consent": true, "approval_state": "rejected", "campaign": "google", "source": "landing-page"},
+    "expected": {"status": "completed", "crm_action": "create", "crm_records": 1, "owner": "owner_growth", "review_tasks": 0, "notifications": 0, "evidence_status": "crm_write_succeeded", "source": "landing-page"}
+  },
+  {
+    "id": "LC-09",
+    "name": "approved state creates exactly one notification",
+    "input": {"submission_id": "sub-009", "email": "approved@example.test", "consent": true, "approval_state": "approved", "campaign": "partner", "source": "partner-form"},
+    "expected": {"status": "completed", "crm_action": "create", "crm_records": 1, "owner": "owner_partnerships", "review_tasks": 0, "notifications": 1, "evidence_status": "crm_write_succeeded", "source": "partner-form"}
+  },
+  {
+    "id": "LC-10",
+    "name": "transient CRM timeout retries without a duplicate",
+    "input": {"submission_id": "sub-010", "email": "retry@example.test", "consent": true, "approval_state": "approved", "campaign": "google", "source": "landing-page", "crm_write_sequence": ["timeout", "success"]},
+    "expected": {"status": "completed", "crm_action": "create", "crm_records": 1, "owner": "owner_growth", "review_tasks": 0, "notifications": 1, "evidence_status": "crm_write_succeeded", "source": "landing-page"}
+  },
+  {
+    "id": "LC-11",
+    "name": "permanent CRM failure records evidence without false success",
+    "input": {"submission_id": "sub-011", "email": "write.failure@example.test", "consent": true, "approval_state": "approved", "campaign": "google", "source": "landing-page", "crm_write_sequence": ["timeout", "failure"]},
+    "expected": {"status": "hold", "crm_action": "create", "crm_records": 0, "owner": "owner_growth", "review_tasks": 0, "notifications": 0, "evidence_status": "crm_write_failed", "source": "landing-page"}
+  },
+  {
+    "id": "LC-12",
+    "name": "source evidence survives normalization and CRM handoff",
+    "input": {"submission_id": "sub-012", "email": " Source.Check@Example.Test ", "consent": true, "approval_state": "approved", "campaign": "google", "source": "webinar-registration"},
+    "expected": {"status": "completed", "crm_action": "create", "crm_records": 1, "owner": "owner_growth", "review_tasks": 0, "notifications": 1, "evidence_status": "crm_write_succeeded", "source": "webinar-registration"}
+  }
+]
