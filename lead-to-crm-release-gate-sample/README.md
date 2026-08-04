@@ -2,7 +2,7 @@
 
 Sample ID: LC-L2C-2026-08-SYNTHETIC
 
-Prepared by Gang Qu on 2026-08-03.
+Prepared by Chris on 2026-08-03.
 
 ## Truth boundary
 
@@ -86,4 +86,4 @@ The service excludes security testing, regulated-data review, production credent
 
 The current price is USD 139 for international billing or RMB 999 for mainland China billing, subject to a mutually usable payment path. The first report is delivered within 48 hours after complete sanitized inputs, confirmed scope, and verified payment.
 
-[Email Gang Qu to check fit and payment availability](mailto:stomeonst123@gmail.com?subject=LaunchClear%20Lead-to-CRM%20release%20gate&body=Hi%20Gang%20Qu%2C%0A%0AWorkflow%20stage%3A%0ATwo%20connected%20systems%3A%0AMain%20release%20risk%3A%0ASanitized%20evidence%20available%3A%0ATarget%20release%20date%3A%0A%0AThanks%2C). Do not send credentials, personal data, customer data, private URLs, production exports, or confidential logs in the first message. An inquiry does not create a contract or start work.
+[Email Chris to check fit and payment availability](mailto:stomeonst123@gmail.com?subject=LaunchClear%20Lead-to-CRM%20release%20gate&body=Hi%20Chris%2C%0A%0AWorkflow%20stage%3A%0ATwo%20connected%20systems%3A%0AMain%20release%20risk%3A%0ASanitized%20evidence%20available%3A%0ATarget%20release%20date%3A%0A%0AThanks%2C). Do not send credentials, personal data, customer data, private URLs, production exports, or confidential logs in the first message. An inquiry does not create a contract or start work.

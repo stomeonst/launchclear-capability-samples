@@ -1,6 +1,6 @@
 # LaunchClear Capability Samples
 
-LaunchClear is an independent product, automation, and technical delivery practice operated by Gang Qu.
+LaunchClear is an independent product, automation, and technical delivery practice operated by Chris.
 
 This repository contains independently prepared capability samples. Each sample shows how LaunchClear would analyze and bound a publicly described project. The materials are provided for review and discussion.
 
@@ -8,7 +8,7 @@ This repository contains independently prepared capability samples. Each sample 
 
 - The samples were prepared independently from public project posts and first-party documentation available on the dates stated in each file.
 - The organizations named in the samples did not commission, review, approve, sponsor, or endorse this work.
-- LaunchClear and Gang Qu have no client relationship with the organizations named in these samples.
+- LaunchClear and Chris have no client relationship with the organizations named in these samples.
 - No private system, source code, configuration, customer data, credentials, or internal documentation was accessed.
 - The repository does not claim completed client engagements, client outcomes, or prior commissioned work for the named organizations.
 - No project experience, testimonial, customer result, or performance figure has been invented.
@@ -58,7 +58,7 @@ The international and mainland China prices depend on a mutually usable billing 
 
 1. [Submit a public, sanitized Lead-to-CRM release-gate request in English](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=automation-rescue-request.yml).
 2. [用中文提交公开且已脱敏的Lead-to-CRM上线验收需求](https://github.com/stomeonst/launchclear-capability-samples/issues/new?template=automation-rescue-request-zh.yml)。
-3. [Use the private email path](mailto:stomeonst123@gmail.com?subject=LaunchClear%20Lead-to-CRM%20release%20gate&body=Hi%20Gang%20Qu%2C%0A%0AWorkflow%20stage%3A%0ATwo%20connected%20systems%3A%0AMain%20release%20risk%3A%0ASanitized%20evidence%20available%3A%0ATarget%20release%20date%3A%0A%0AThanks%2C) when a safe first description cannot be posted publicly.
+3. [Use the private email path](mailto:stomeonst123@gmail.com?subject=LaunchClear%20Lead-to-CRM%20release%20gate&body=Hi%20Chris%2C%0A%0AWorkflow%20stage%3A%0ATwo%20connected%20systems%3A%0AMain%20release%20risk%3A%0ASanitized%20evidence%20available%3A%0ATarget%20release%20date%3A%0A%0AThanks%2C) when a safe first description cannot be posted publicly.
 
 Do not place credentials, API keys, personal data, customer data, private URLs, production exports, or confidential logs in a GitHub issue. Creating a request does not create a contract or start work. Scope, payment, access boundaries, and acceptance criteria must be confirmed separately in writing.
 
@@ -66,7 +66,7 @@ Do not place credentials, API keys, personal data, customer data, private URLs, 
 
 ## Contact
 
-Gang Qu
+Chris
 
 LaunchClear
 
